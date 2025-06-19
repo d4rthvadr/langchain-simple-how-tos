@@ -40,6 +40,18 @@ This project integrates OpenAI's GPT models using the LangChain library. To get 
 
 > **Note:** Keep your API key private and do not share it publicly. If your key is compromised, you can revoke it and generate a new one from the same page.
 
+## How to Sign Up and Generate a Tavily API Key
+
+1. Visit the [Tavily API Signup Page](https://tavily.ai/signup).
+2. Create an account by providing your email address and setting a password.
+3. Verify your email address by clicking on the verification link sent to your inbox.
+4. Log in to your Tavily account.
+5. Navigate to the "API Keys" section in your account dashboard.
+6. Click on "Generate New API Key" and provide a name for the key (e.g., "LangChain Project").
+7. Copy the generated API key and store it securely.
+
+> **Note:** Keep your Tavily API key private and do not share it publicly. If your key is compromised, you can revoke it and generate a new one from the dashboard.
+
 ## Running Specific Use-Cases
 
 To run specific use-cases, use the following commands:
@@ -65,8 +77,13 @@ Each command corresponds to a specific functionality in the project. Ensure that
 
 ## Dependencies
 
-- [@langchain/openai](https://www.npmjs.com/package/@langchain/openai)
-- [langchain](https://www.npmjs.com/package/langchain)
+- **@langchain/tavily**: Integrates Tavily as a tool for building agents and processing user inputs.
+- **zod**: Provides schema validation and type safety for inputs and outputs.
+- **cheerio**: Used for web scraping and parsing HTML documents.
+- **@langchain/openai**: Provides integration with OpenAI's GPT models.
+- **langchain**: Core library for building chains and agents.
+
+Ensure these dependencies are installed before running the project.
 
 ## Notes
 
