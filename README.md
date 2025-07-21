@@ -56,11 +56,15 @@ This project integrates OpenAI's GPT models using the LangChain library. To get 
 
 To run specific use-cases, use the following commands:
 
-- **Output Parsers**:
+### Basic Examples
+
+- **LLM Integration**:
 
   ```shell
-  node output-parsers.js
+  node llm.js
   ```
+
+  Demonstrates basic OpenAI model interaction and text generation.
 
 - **Prompt Templates**:
 
@@ -68,10 +72,67 @@ To run specific use-cases, use the following commands:
   node prompt-templates.js
   ```
 
-- **LLM Integration**:
+  Shows how to create and use structured prompt templates for consistent outputs.
+
+- **Output Parsers**:
   ```shell
-  node llm.js
+  node output-parsers.js
   ```
+  Examples of parsing and structuring LLM responses using Zod schemas.
+
+### Intermediate Examples
+
+- **Document Retrieval**:
+
+  ```shell
+  node retrieval-chain.js
+  ```
+
+  Implements RAG (Retrieval-Augmented Generation) with web scraping and vector search.
+
+- **Retrieval with Documents**:
+
+  ```shell
+  node retrieval-chain-with-docs.js
+  ```
+
+  Advanced document retrieval with multiple document sources.
+
+- **Memory-based Retrieval**:
+  ```shell
+  node retrieval-chain-with-docs-and-memory.js
+  ```
+  Combines document retrieval with conversation memory.
+
+### Advanced Examples
+
+- **Agent with Memory**:
+
+  ```shell
+  node agent-with-memory.js
+  ```
+
+  Shows persistent conversation memory using Redis/Upstash for stateful interactions.
+
+- **Agent with Tools**:
+
+  ```shell
+  node agent.js
+  ```
+
+  Building intelligent agents that can use external tools like Tavily for enhanced capabilities.
+
+- **Caching**:
+  ```shell
+  node cache.js
+  ```
+  Demonstrates response caching for improved performance.
+
+### Prerequisites
+
+- **Basic Examples**: Only require OpenAI API key
+- **Advanced Examples with Memory**: Require Redis setup or Upstash account
+- **Tool-based Examples**: May require additional API keys (e.g., Tavily)
 
 Each command corresponds to a specific functionality in the project. Ensure that all dependencies are installed and the `.env` file is properly configured before running these commands.
 
